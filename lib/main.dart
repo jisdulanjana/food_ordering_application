@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:food_ordering_application/screens/food_menu_screen.dart';
 
+import 'base/res/styles/app_styles.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -16,7 +18,7 @@ class MyApp extends StatelessWidget {
       title: 'food ordering application',
       theme: ThemeData(
         
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: AppStyles.primaryColor),
         useMaterial3: true,
       ),
       home: const FoodMenuScreen(),
